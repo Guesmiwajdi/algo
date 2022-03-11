@@ -1,0 +1,22 @@
+ALGORITHM characters_sentence
+var 
+  phrase : STRING;
+  vowels, i : INTEGER :=0;
+  caracters, words : INTEGER :=1;
+BEGIN
+  while (phrase[i] <> "."){
+    caracters = caracters + 1;
+
+    if(phrase[i] = " "){
+      words = words + 1;
+    }
+
+    if(phrase[i] = "a" or "e" or "i" or "u" or "o" ){
+        vowels = vowels + 1;
+    }
+
+  }
+  write(caracters)
+  write(words)
+  write(vowels)
+END
